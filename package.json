@@ -1,0 +1,13 @@
+{
+  "name": "metmuseum",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:amilajack/metmuseum.git",
+  "author": "Amila Welihinda <amilajack@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-bliss": "^3.4.0",
+    "parcel-bundler": "^1.12.3"
+  }
+}
