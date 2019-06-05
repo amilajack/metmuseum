@@ -17,3 +17,14 @@ cd metmuseum
 yarn
 yarn test
 ```
+
+## Usage
+
+```js
+import Metmuseum from 'metmuseum';
+
+Metmuseum.getAllItems();
+Metmuseum.getItem(436535);
+Metmuseum.getDepartments();
+Metmuseum.search('starry night');
+```

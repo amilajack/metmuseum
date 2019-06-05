@@ -6,11 +6,45 @@
   "author": "Amila Welihinda <amilajack@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-jest": "^24.8.0",
     "eslint": "^5.16.0",
     "eslint-config-bliss": "^3.4.0",
+    "jest-fetch-mock": "^2.1.2",
     "parcel-bundler": "^1.12.3"
   },
   "renovate": {
-    "extends": ["bliss"]
+    "extends": [
+      "bliss"
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:react/recommended",
+      "bliss"
+    ],
+    "env": {
+      "browser": true
+    },
+    "rules": {
+      "flowtype-errors/show-errors": "off"
+    }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "jest": {
+    "automock": false,
+    "setupFiles": [
+      "./setupJest.js"
+    ]
   }
 }
