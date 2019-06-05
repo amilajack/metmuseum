@@ -1,6 +1,6 @@
 {
   "name": "metmuseum",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "main": "index.js",
   "repository": "git@github.com:amilajack/metmuseum.git",
   "author": "Amila Welihinda <amilajack@gmail.com>",
