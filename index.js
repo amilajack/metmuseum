@@ -12,7 +12,7 @@ export default class API {
     }
 
     static getItem(itemId) {
-        return API.fetch(ENDPOINTS.search + `/${itemId}`);
+        return API.fetch(ENDPOINTS.objects + `/${itemId}`);
     }
 
     static fetch(url) {
