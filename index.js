@@ -1,3 +1,5 @@
+import fetch from 'isomorphic-fetch';
+
 const ENDPOINTS = {
     departments: 'https://collectionapi.metmuseum.org/public/collection/v1/departments',
     search: 'https://collectionapi.metmuseum.org/public/collection/v1/search',

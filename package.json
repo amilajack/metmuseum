@@ -38,13 +38,15 @@
   },
   "babel": {
     "presets": [
-      "@babel/preset-env"
+      [
+        "@babel/preset-env",
+        {
+          "useBuiltIns": "usage"
+        }
+      ]
     ]
   },
-  "jest": {
-    "automock": false,
-    "setupFiles": [
-      "./setupJest.js"
-    ]
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1"
   }
 }
